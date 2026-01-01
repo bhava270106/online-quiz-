@@ -1,0 +1,77 @@
+:root {
+    --primary: #4a90e2;
+    --success: #2ecc71;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #2d3436;
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.quiz-container {
+    background: var(--card);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.progress-container {
+    background: #eee;
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background: var(--primary);
+    height: 100%;
+    width: 10%;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+h2 { color: var(--text); font-size: 1.2rem; margin-bottom: 20px; text-align: center; }
+
+.answer-grid { display: grid; gap: 10px; }
+
+.answer-btn {
+    padding: 15px;
+    border: 2px solid #eee;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+    text-align: left;
+}
+
+.answer-btn:hover {
+    border-color: var(--primary);
+    background: #f0f7ff;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Result Screen Style */
+.result-screen { text-align: center; padding: 20px; }
+.score-circle {
+    width: 100px; height: 100px; border-radius: 50%;
+    background: var(--primary); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; margin: 20px auto;
+}
